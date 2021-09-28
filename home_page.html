@@ -5,23 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>myschoolr</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <link rel="stylesheet" href="css/responsive.css" type="text/css" />
   </head>
-  <body>
+  <body class="bootstrap-wrapper">
     <header class="fixed">
       <div class="container">
-        <div class="row">
+        <div class="row align-item-center">
+          <div class="col col-sm-4 ">
           <a class="website-logo" href="#"><img src="images/logo.png" /></a>
-          <ul class="website-navigation nav-inline">
-            <li class="menu-active"><a href="#">Home</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Pricing</a></li>
+          </div>
+          <div class="col col-sm-8">
+               <ul class="website-navigation nav-inline hidden-md-down">
+                  <li class="menu-active"><a href="#">Home</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">Pricing</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Contact</a></li>
             <li><button class="btn secondary-btn">SIGN UP</button></li>
             <li><button class="btn third-btn">SIGN UP</button></li>
           </ul>
+          <a href="#" class="nav-toggle-btn hidden-lg-up">
+              <img src="images/nav-toggle-btn.svg" alt="toggle-btn">
+          </a>
+          </div>
+          
+         
         </div>
       </div>
     </header>
@@ -29,51 +39,57 @@
       <section class="page-section banner-section">
         <div class="container">
           <div class="row">
-            <div class="banner-data left">
-              <h1 class="Banner-title">
-                Free School Management <br />Software &amp; App
-              </h1>
-              <ul class="nav-inline banner-nav">
-                <li><a href="#">Schools</a></li>
-                <li><a href="#">Colleges</a></li>
-                <li><a href="#">Academy</a></li>
-              </ul>
-              <p class="banner-sub-title">
-                Start With MySchoolr Free Plan for your institute.
-              </p>
-              <ul class="nav-inline banner-action-btns">
-                <li>
-                  <button class="btn secondary-btn">Try Demo Here</button>
-                </li>
-                <li>
-                  <button class="btn play-store-btn">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="banner-data left">
+                    <h1 class="Banner-title">
+                      Free School Management <br />Software &amp; App
+                    </h1>
+                    <ul class="nav-inline banner-nav">
+                      <li><a href="#">Schools</a></li>
+                      <li><a href="#">Colleges</a></li>
+                      <li><a href="#">Academy</a></li>
+                    </ul>
+                    <p class="banner-sub-title">
+                      Start With MySchoolr Free Plan for your institute.
+                    </p>
+                    <ul class="nav-inline banner-action-btns">
+                      <li>
+                        <button class="btn secondary-btn">Try Demo Here</button>
+                      </li>
+                      <li>
+                        <button class="btn play-store-btn">
+                          <img
+                            alt="playstore"
+                            title="playstore image"
+                            src="images/appstore.svg"
+                          />
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <div class="banner-data right">
                     <img
                       alt="playstore"
                       title="playstore image"
-                      src="images/appstore.svg"
+                      src="images/banner-img.png"
                     />
-                  </button>
-                </li>
-              </ul>
+                  </div>
             </div>
-            <div class="banner-data right">
-              <img
-                alt="playstore"
-                title="playstore image"
-                src="images/banner-img.png"
-              />
-            </div>
+                  
+                  
           </div>
         </div>
       </section>
-      <section class="page-section">
+      <section class="page-section app-for-every-one">
         <div class="container">
           <h3 class="section-title text-center">Apps For Everyone</h3>
           <p class="section-sub-title  text-center">
             Out perform your Roles with MySchoolr
           </p>
           <div class="row">
-                <div class="pa-l-r-15">
+                <div class="col-sm-4">
                   <img class="cap-icon" src="images/capIcon.svg" alt="cap-icon" />
                   <h5 class="section-sub-heading">Principal App</h5>
                   <p class="para-text">Manage your school remotely. Send emergency notices, track
@@ -81,7 +97,7 @@
                     track school buses.</p>
                   <a class="btn secondary-btn" href="#">Try Demo</a>
                 </div>
-                <div class="pa-l-r-15">
+                <div class="col-sm-4">
                   <img class="cap-icon" src="images/capIcon.svg" alt="cap-icon" />
                   <h5 class="section-sub-heading">Principal App</h5>
                   <p class="para-text">Manage your school remotely. Send emergency notices, track
@@ -89,7 +105,7 @@
                     track school buses.</p>
                   <a class="btn secondary-btn" href="#">Try Demo</a>
                 </div>
-                <div class="pa-l-r-15">
+                <div class="col-sm-4">
                   <img class="cap-icon" src="images/capIcon.svg" alt="cap-icon" />
                   <h5 class="section-sub-heading">Principal App</h5>
                   <p class="para-text">Manage your school remotely. Send emergency notices, track
@@ -104,7 +120,7 @@
         <div class="container">
          
           <div class="row">
-                <div class="pa-l-r-15 text-center">
+                <div class="col text-center">
                   <img class="calendar-img" src="images/schedule-demo.png" alt="cap-icon" />                  
                 </div>
                 
@@ -114,13 +130,13 @@
       <section class="page-section">
         <div class="container">
           <div class="row">
-                <div class="pa-l-r-15 flex-bas5">
+                <div class="col-sm-12 col-md-4">
                     <h3 class="section-title">Live Online Classes</h3>
                     <p class="para-text text-align-justify">
                         Experience HD video calling with your classroom. Initiate Meeting from Teacher App and all students will join virtual classroom from their students app. And it Free.
                     </p>
                 </div>
-                <div class="pa-l-r-15 flex-bas7 text-center">
+                <div class="col-sm-12 col-md-8 text-center">
                   <img class="live-class-img" src="images/liveclasses.svg" alt="cap-icon" />                  
                 </div>
           </div>
@@ -133,38 +149,39 @@
             18+ Unique Features for complete digitalization of</br>
             your institute and more coming soon.
           </p>
-          <div class="row flex-wrap-wrap">
-                <div class="pa-15 flex-bas4 ">
+          <div class="row ">
+
+                <div class="pa-15 col-sm-6 col-md-6 col-lg-4">
                   <div class="feature-container">
                   <img class="featues-icon vertical-align-mid" src="images/feature/studAdmission.svg" alt="cap-icon" />
                   <a class="features-sub-heading" href="">Student Admission</a>
                   </div>
                 </div>
-                <div class="pa-15 flex-bas4 ">
+                <div class="pa-15 col-sm-6 col-md-6 col-lg-4">
                   <div class="feature-container">
                   <img class="featues-icon vertical-align-mid" src="images/feature/noticeboard.svg" alt="cap-icon" />
                   <a class="features-sub-heading" href="">NoticeBoard</a>
                   </div>
                 </div>
-                <div class="pa-15 flex-bas4 ">
+                <div class="pa-15 col-sm-6 col-md-6 col-lg-4">
                   <div class="feature-container">
                   <img class="featues-icon vertical-align-mid" src="images/feature/timetable.svg" alt="cap-icon" />
                   <a class="features-sub-heading" href="">Student-Teacher Timetable</a>
                   </div>
                 </div>
-                <div class="pa-15 flex-bas4 ">
+                <div class="pa-15 col-sm-6 col-md-6 col-lg-4">
                   <div class="feature-container">
                   <img class="featues-icon vertical-align-mid" src="images/feature/attendance.svg" alt="cap-icon" />
                   <a class="features-sub-heading" href="">Staff Attendance</a>
                   </div>
                 </div>
-                <div class="pa-15 flex-bas4 ">
+                <div class="pa-15 col-sm-6 col-md-6 col-lg-4">
                   <div class="feature-container">
                   <img class="featues-icon vertical-align-mid" src="images/feature/bustracking.svg" alt="cap-icon" />
                   <a class="features-sub-heading" href="">Live Bus Tracking</a>
                   </div>
                 </div>
-                <div class="pa-15 flex-bas4 ">
+                <div class="pa-15 col-sm-6 col-md-6 col-lg-4">
                   <div class="feature-container">
                   <img class="featues-icon vertical-align-mid" src="images/feature/role.svg" alt="cap-icon" />
                   <a class="features-sub-heading" href="">Roles & Responsibility</a>
@@ -173,37 +190,37 @@
 
 
 
-                <div class="pa-15 flex-bas4 ">
+                <div class="pa-15 col-sm-6 col-md-6 col-lg-4">
                   <div class="feature-container">
                   <img class="featues-icon vertical-align-mid" src="images/feature/payment.svg" alt="cap-icon" />
                   <a class="features-sub-heading" href="">Accounting</a>
                   </div>
                 </div>
-                <div class="pa-15 flex-bas4 ">
+                <div class="pa-15 col-sm-6 col-md-6 col-lg-4">
                   <div class="feature-container">
                   <img class="featues-icon vertical-align-mid" src="images/feature/message.svg" alt="cap-icon" />
                   <a class="features-sub-heading" href="">Messaging</a>
                   </div>
                 </div>
-                <div class="pa-15 flex-bas4 ">
+                <div class="pa-15 col-sm-6 col-md-6 col-lg-4">
                   <div class="feature-container">
                   <img class="featues-icon vertical-align-mid" src="images/feature/documents.svg" alt="cap-icon" />
                   <a class="features-sub-heading" href="">Documents-LC, TC, Bonafide</a>
                   </div>
                 </div>
-                <div class="pa-15 flex-bas4 ">
+                <div class="pa-15 col-sm-6 col-md-6 col-lg-4">
                   <div class="feature-container">
                     <img class="featues-icon vertical-align-mid" src="images/feature/store.svg" alt="cap-icon" />
                     <a class="features-sub-heading" href="">Store Management</a>
                   </div>
                 </div>
-                <div class="pa-15 flex-bas4 ">
+                <div class="pa-15 col-sm-6 col-md-6 col-lg-4">
                   <div class="feature-container">
                     <img class="featues-icon vertical-align-mid" src="images/feature/library.svg" alt="cap-icon" />
                     <a class="features-sub-heading" href="">Library Management</a>
                   </div>
                 </div>
-                <div class="pa-15 flex-bas4 ">
+                <div class="pa-15 col-sm-6 col-md-6 col-lg-4">
                   <div class="feature-container">
                     <img class="featues-icon vertical-align-mid" src="images/feature/exam.svg" alt="cap-icon" />
                     <a class="features-sub-heading" href="">Exam & Results</a>
@@ -212,37 +229,37 @@
 
 
 
-                <div class="pa-15 flex-bas4 ">
+                <div class="pa-15 col-sm-6 col-md-6 col-lg-4">
                   <div class="feature-container">
                       <img class="featues-icon vertical-align-mid" src="images/feature/calendar.svg" alt="cap-icon" />
                       <a class="features-sub-heading" href="">Academic Calendar</a>
                   </div>
                 </div>
-                <div class="pa-15 flex-bas4 ">
+                <div class="pa-15 col-sm-6 col-md-6 col-lg-4">
                   <div class="feature-container">
                       <img class="featues-icon vertical-align-mid" src="images/feature/class.svg" alt="cap-icon" />
                       <a class="features-sub-heading" href="">Class Management</a>
                   </div>
                 </div>
-                <div class="pa-15 flex-bas4 ">
+                <div class="pa-15 col-sm-6 col-md-6 col-lg-4">
                   <div class="feature-container">
                       <img class="featues-icon vertical-align-mid" src="images/feature/gallery.svg" alt="cap-icon" />
                       <a class="features-sub-heading" href="">Gallery</a>
                   </div>
                 </div>
-                <div class="pa-15 flex-bas4 ">
+                <div class="pa-15 col-sm-6 col-md-6 col-lg-4">
                   <div class="feature-container">
                       <img class="featues-icon vertical-align-mid" src="images/feature/tutorial.svg" alt="cap-icon" />
                       <a class="features-sub-heading" href="">Video Tutorials</a>
                   </div>
                 </div>
-                <div class="pa-15 flex-bas4 ">
+                <div class="pa-15 col-sm-6 col-md-6 col-lg-4">
                   <div class="feature-container">
                       <img class="featues-icon vertical-align-mid" src="images/feature/attendance.svg" alt="cap-icon" />
                       <a class="features-sub-heading" href="">Student Attendance</a>
                   </div>
                 </div>
-                <div class="pa-15 flex-bas4 ">
+                <div class="pa-15 col-sm-6 col-md-6 col-lg-4">
                   <div class="feature-container">
                     <img class="featues-icon vertical-align-mid" src="images/feature/quiz.svg" alt="cap-icon" />
                     <a class="features-sub-heading" href="">Quiz / Aptitude</a>
@@ -271,16 +288,16 @@
           <h3 class="section-title">App Screenshots</h3>
 
           <div class="row">
-                <div class="pa-l-r-15 flex-bas3 text-center">
+                <div class="col-sm-12 col-md-6 col-lg-3 text-center">
                   <img class="app-screenshot" src="images/app-screenshot/homeScreen.svg" alt="cap-icon">                  
                 </div>
-                <div class="pa-l-r-15 flex-bas3 text-center">
+                <div class="col-sm-12 col-md-6 col-lg-3 text-center">
                   <img class="app-screenshot" src="images/app-screenshot/chatsScreen.svg" alt="cap-icon">                  
                 </div>
-                <div class="pa-l-r-15 flex-bas3 text-center">
+                <div class="col-sm-12 col-md-6 col-lg-3 text-center">
                   <img class="app-screenshot" src="images/app-screenshot/viewAttScreen.svg" alt="cap-icon">                  
                 </div>
-                <div class="pa-l-r-15 flex-bas3 text-center">
+                <div class="col-sm-12 col-md-6 col-lg-3 text-center">
                   <img class="app-screenshot" src="images/app-screenshot/attenScreen.svg" alt="cap-icon">                  
                 </div> 
                 
@@ -303,13 +320,13 @@
       <section class="page-section">
         <div class="container">
           <div class="row">
-                <div class="pa-l-r-15 flex-bas5">
+                <div class="pa-l-r-15 col-sm-12 col-md-6">
                     <h3 class="section-title">Experience Best Cloud Speed & Security</h3>
                     <p class="para-text text-align-justify">
                       We choose Google Cloud Platform & Amazon Web Sevices as our hosting partner. Get more speed, availability, Security with MySchoolr Cloud-based ERP solution.
                     </p>
                 </div>
-                <div class="pa-l-r-15 flex-bas7 text-center">
+                <div class="pa-l-r-15 flex-bas7 text-center col-sm-12 col-md-6">
                     <img class="speed-security-img" src="images/experience.svg" alt="cap-icon" />                  
                 </div>
           </div>
@@ -323,19 +340,19 @@
           </p>
           <div class="row">
 
-                <div class="pa-l-r-15 text-center">
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
                   <h3 class="section-title">15 +</h3>
                   <h5 class="features-sub-heading">Country</h3>
                 </div>
-                <div class="pa-l-r-15 text-center">
+                <div class="col-xs-6  col-sm-6 col-md-3 col-lg-3 text-center">
                   <h3 class="section-title">600 +</h3>
                   <h5 class="features-sub-heading">School</h3>
                 </div>
-                <div class="pa-l-r-15 text-center">
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
                   <h3 class="section-title">30 +</h3>
                   <h5 class="features-sub-heading">College</h3>
                 </div>
-                <div class="pa-l-r-15 text-center">
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
                   <h3 class="section-title">120 +</h3>
                   <h5 class="features-sub-heading">Academy/Tuition</h3>
                 </div>
@@ -431,28 +448,25 @@
     </div>
     <footer>
       <div class="container">
-        <div class="row">
-          <a class="website-logo" href="#"><img src="images/logo.png" /></a>
-          <ul class="website-navigation nav-inline footer-navigation">
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Career</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#"> Privacy Policy</a></li>
-            <li><a href="#">General Terms Of Use</a></li>
-            <li><a href="#">SaaS Terms Of Use</a></li>       
-           
-          </ul>
-          <ul class="website-navigation nav-inline social-media-link">
-            <li><a href="#"><img src="images/social-media-icon/twitter.svg" alt="socail-media-icon" /></a></li>
-            <li><a href="#"><img src="images/social-media-icon/facebook.svg" alt="socail-media-icon" /></a></li>
-            <li><a href="#"><img src="images/social-media-icon/instagram.svg" alt="socail-media-icon" /></a></li>
-            <li><a href="#"><img src="images/social-media-icon/youtube.svg" alt="socail-media-icon" /></a></li>
-            <li><a href="#"><img src="images/social-media-icon/linkedin.svg" alt="socail-media-icon" /></a></li>
-            <li><a href="#"><img src="images/social-media-icon/whatsapp.svg" alt="socail-media-icon" /></a></li>
-          </ul>
+        <div class="row align-item-center">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <a class="website-logo" href="#"><img src="images/logo.png" /></a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 ">
+              <ul class="website-navigation nav-inline social-media-link hidden-sm-down">
+                <li><a href="#"><img src="images/social-media-icon/twitter.svg" alt="socail-media-icon" /></a></li>
+                <li><a href="#"><img src="images/social-media-icon/facebook.svg" alt="socail-media-icon" /></a></li>
+                <li><a href="#"><img src="images/social-media-icon/instagram.svg" alt="socail-media-icon" /></a></li>
+                <li><a href="#"><img src="images/social-media-icon/youtube.svg" alt="socail-media-icon" /></a></li>
+                <li><a href="#"><img src="images/social-media-icon/linkedin.svg" alt="socail-media-icon" /></a></li>
+                <li><a href="#"><img src="images/social-media-icon/whatsapp.svg" alt="socail-media-icon" /></a></li>
+              </ul>
+              <p class="copy-right hidden-md-up">© Copyright 2021 All rights reserved by <span class="pvt">Kodecamp.</span></p>
+            </div>
         </div>
       </div>
     </footer>
+    
   </body>
   <script src="js/custom.js"></script>
 </html>
