@@ -28,3 +28,10 @@ function moveRight() {
 btnLeft.addEventListener("click", moveLeft);
 btnRight.addEventListener("click", moveRight);
 window.addEventListener("resize", moveSlider);
+
+// menu toggle function
+
+function menuToggle() {
+  var element = document.getElementById("header");
+  element.classList.toggle("menu-show");
+}

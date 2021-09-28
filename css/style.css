@@ -72,7 +72,7 @@ ul.banner-action-btns{justify-content: left;}
 .play-store-btn{height: 36px;display: block;padding: 0px 0px !important;}
 .play-store-btn img{height: 34px;object-fit: cover;}
 section.page-section{padding: 60px 0px;}
-.banner-data.right img{width: 100%;object-fit: contain;}
+.banner-data.right img{width: 100%;object-fit: contain;box-shadow: 1px 4px 20px -2px rgb(0 0 0 / 10%);border: 1px solid #ccc;}
 .Banner-title{font-size: var(--banner-heading);margin-bottom: 30px;}
 ul.banner-nav li a{font-size: 20px;text-transform: capitalize;}
 ul.nav-inline.banner-nav li:last-child{border: none;}
@@ -89,6 +89,7 @@ footer{padding: 20px 0px;border-top: 1px solid #ccc;}
 ul.website-navigation.nav-inline.social-media-link li a img{height: 22px;}
 .social-media-link li a{padding: 0px !important;}
 .social-media-link li{margin: 0px 3px;}
+.menu-show ul.website-navigation.nav-inline{margin-left: 0px;}
 /************************css specific to this website****************************/
 /*******************only for testimonial**************************/
 .testimonials{background: #fff;text-align: center;width: 95%;max-width: 1200px;padding: 0px 0rem;margin: 0rem auto;}
