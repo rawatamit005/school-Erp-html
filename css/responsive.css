@@ -32,7 +32,7 @@
     }
     ul.website-navigation.nav-inline li {
       display: block;
-      padding: 10px 20px;
+      padding: 0px 10px;
       margin: 0px;
     }
     ul.website-navigation.nav-inline li a {
@@ -41,6 +41,7 @@
     }
     ul.website-navigation.nav-inline li button {
       width: 100%;
+      margin: 5px 0px;
     }
   }
   @media screen and (max-width: 768px) {
